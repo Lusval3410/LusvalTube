@@ -4,15 +4,16 @@ background:#111;
 
 color:white;
 
-font-family:Arial;
+font-family:Arial, sans-serif;
 
-text-align:center;
+margin:0;
 
 }
 
 
-
 header {
+
+text-align:center;
 
 padding:20px;
 
@@ -22,9 +23,15 @@ padding:20px;
 
 input {
 
-padding:10px;
+width:65%;
 
-width:70%;
+padding:12px;
+
+font-size:16px;
+
+border-radius:8px;
+
+border:none;
 
 }
 
@@ -32,21 +39,43 @@ width:70%;
 
 button {
 
-padding:10px;
+padding:12px;
 
-background:red;
+margin:5px;
+
+background:#ff0000;
 
 color:white;
 
-border:0;
+border:none;
+
+border-radius:8px;
+
+font-size:16px;
 
 }
 
 
 
-#resultados {
+#reproductor {
 
-margin-top:20px;
+display:flex;
+
+justify-content:center;
+
+margin:20px;
+
+}
+
+
+
+#player {
+
+width:90%;
+
+max-width:700px;
+
+aspect-ratio:16/9;
 
 }
 
@@ -54,10 +83,70 @@ margin-top:20px;
 
 .video {
 
+
 background:#222;
+
+margin:15px;
+
+padding:15px;
+
+border-radius:10px;
+
+}
+
+
+
+.video img {
+
+width:100%;
+
+max-width:300px;
+
+border-radius:8px;
+
+}
+
+
+
+h2 {
+
+font-size:18px;
+
+}
+
+
+
+/* Optimización teléfonos viejos */
+
+@media(max-width:500px){
+
+
+h1 {
+
+font-size:24px;
+
+}
+
+
+input {
+
+width:85%;
+
+}
+
+
+button {
+
+width:85%;
+
+}
+
+
+.video {
 
 margin:10px;
 
-padding:15px;
+}
+
 
 }
